@@ -1,0 +1,45 @@
+# Kodi Media Center language file
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgctxt "#32000"
+msgid "General"
+msgstr ""
+
+msgctxt "#32001"
+msgid "Output"
+msgstr ""
+
+msgctxt "#32002"
+msgid "Switch HDR"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Allow 4K at 50/60 Hz"
+msgstr ""
+
+msgctxt "#32004"
+msgid "Pause after mode change (s)"
+msgstr ""
+
+msgctxt "#32005"
+msgid "Choose output"
+msgstr ""
+
+msgctxt "#32006"
+msgid "Automatic (first active output)"
+msgstr ""
+
+msgctxt "#32007"
+msgid "off"
+msgstr ""
+
+msgctxt "#32008"
+msgid "kscreen-doctor reported no outputs."
+msgstr ""
+
+msgctxt "#32009"
+msgid "Output whose mode and HDR follow the video. \"auto\" uses the first active output."
+msgstr ""

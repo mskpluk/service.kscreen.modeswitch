@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.kscreen.modeswitch" name="KScreen Mode Switch" version="1.1.0" provider-name="mskpluk">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Matches display mode and HDR to the video (KDE Plasma, Wayland)</summary>
+    <summary lang="pl_PL">Dopasowuje tryb ekranu i HDR do filmu (KDE Plasma, Wayland)</summary>
+    <description lang="en_GB">Switches resolution, refresh rate and HDR with kscreen-doctor when a video starts and restores the desktop mode afterwards.</description>
+    <description lang="pl_PL">Przełącza rozdzielczość, odświeżanie i HDR przez kscreen-doctor przy starcie filmu i przywraca tryb pulpitu po jego zakończeniu.</description>
+    <platform>linux</platform>
+    <license>GPL-2.0-or-later</license>
+    <source>https://github.com/mskpluk/service.kscreen.modeswitch</source>
+    <news>v1.1.0
+- Output selection (auto or chosen output)
+- Immediate return to desktop mode
+- Polish translation</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
