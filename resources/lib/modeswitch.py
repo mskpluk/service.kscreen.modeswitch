@@ -12,6 +12,8 @@ ADDON_ID = ADDON.getAddonInfo("id")
 
 UHD = (3840, 2160)
 FHD = (1920, 1080)
+# The player reports the coded size, H.264 rounds 1080 up to 1088.
+FHD_CODED_HEIGHT = 1088
 DESKTOP = (FHD, 60.0)
 # 24.000 fps plays at 23.976 Hz and 30.000 at 29.97 Hz (0.1 %).
 RATE_TOLERANCE = 0.002
@@ -43,7 +45,7 @@ def find_mode(output, size, rate):
 
 def candidates(width, height, fps, interlaced, allow_uhd_high_rate):
     """(size, refresh rate) pairs in order of preference."""
-    uhd = width > FHD[0] or height > FHD[1]
+    uhd = width > FHD[0] or height > FHD_CODED_HEIGHT
     # 25p in 1080 and interlaced sources play at double rate.
     if interlaced or (not uhd and abs(fps - 25) < 0.1):
         rates = [fps * 2, fps]
