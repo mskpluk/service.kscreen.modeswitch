@@ -19,6 +19,9 @@ this add-on exists.
 - **Switch HDR**: enable HDR for HDR10/HLG/Dolby Vision videos.
 - **Allow 4K at 50/60 Hz**: off by default, as many HDMI links cannot
   carry it.
+- **Hide cursor after mode change**: KWin can leave its cursor over the
+  video after a mode change. The KWin Hide Cursor effect is loaded for the
+  playback and unloaded after it.
 - **Pause after mode change**: seconds to wait for the TV to resync.
 
 ## Install

@@ -5,6 +5,7 @@ import os
 import xbmc
 import xbmcaddon
 
+from resources.lib.cursor import CursorHider
 from resources.lib.kscreen import AUTO, kscreen, log, outputs
 
 ADDON = xbmcaddon.Addon()
@@ -117,6 +118,7 @@ class Service(xbmc.Monitor):
         self.player = Player(self)
         self.pending = None
         self.changed = False
+        self.cursor = CursorHider()
 
     def request(self, event):
         self.pending = event
@@ -167,6 +169,8 @@ class Service(xbmc.Monitor):
 
         if apply(output, mode, hdr):
             self.changed = True
+            if self.setting_bool("hide_cursor"):
+                self.cursor.hide()
             # Time for the TV and AV receiver to lock onto the new signal.
             self.waitForAbort(ADDON.getSettingInt("settle_delay"))
 
@@ -174,6 +178,7 @@ class Service(xbmc.Monitor):
             self.player.pause()
 
     def restore(self):
+        self.cursor.restore()
         if not self.changed:
             return
         output = get_output(xbmcaddon.Addon().getSetting("output"))

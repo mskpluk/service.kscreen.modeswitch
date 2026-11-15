@@ -43,3 +43,11 @@ msgstr "kscreen-doctor nie zgłosił żadnych wyjść."
 msgctxt "#32009"
 msgid "Output whose mode and HDR follow the video. \"auto\" uses the first active output."
 msgstr "Wyjście, którego tryb i HDR dopasowują się do filmu. \"auto\" oznacza pierwsze aktywne wyjście."
+
+msgctxt "#32010"
+msgid "Hide cursor after mode change"
+msgstr "Ukryj kursor po zmianie trybu"
+
+msgctxt "#32011"
+msgid "After a mode change the KWin cursor can stay over the video. Loads the KWin \"Hide Cursor\" effect during playback."
+msgstr "Po zmianie trybu kursor KWin może zostać nad filmem. Na czas odtwarzania włącza efekt KWin „Ukryj kursor”."

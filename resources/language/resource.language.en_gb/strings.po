@@ -43,3 +43,11 @@ msgstr ""
 msgctxt "#32009"
 msgid "Output whose mode and HDR follow the video. \"auto\" uses the first active output."
 msgstr ""
+
+msgctxt "#32010"
+msgid "Hide cursor after mode change"
+msgstr ""
+
+msgctxt "#32011"
+msgid "After a mode change the KWin cursor can stay over the video. Loads the KWin \"Hide Cursor\" effect during playback."
+msgstr ""
